@@ -9,5 +9,8 @@ encode_fake.so: encode_fake.c
 encode_true.so: encode_true.c
 	gcc -g encode_true.c -fPIC -shared -o encode_true.so
 
+run: all
+	./main
+
 clean:
 	rm main encode_fake.so encode_true.so
